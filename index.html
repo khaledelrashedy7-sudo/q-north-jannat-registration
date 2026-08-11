@@ -684,7 +684,7 @@
     adminList.innerHTML = 'جاري التحميل...';
 
     try{
-      const keys = await window.storage.list('registration:', true);
+      const keys = await window.storage.list('registration:', false);
       const items = [];
       if(keys && keys.keys){
         for(const k of keys.keys){
